@@ -1,0 +1,49 @@
+.header-item-hover {
+    position: relative; 
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.header-item-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #0d6efd;
+    transition: width 0.4s ease;
+}
+
+.header-item-hover:hover::after {
+    width: 100%; 
+}
+
+.nav-item {
+    position: relative; 
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%; 
+}
+
+.img-hover-zoom{
+    transition: 0.3s;
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.05);
+}
